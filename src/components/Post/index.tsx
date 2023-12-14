@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import style from "./Post.module.css";
 
 type PostProps = {
@@ -8,10 +9,12 @@ type PostProps = {
 
 export const Post = ({ title, text, imageURL }: PostProps) => {
   return (
-    <div className={style.container}>
-      <img src={imageURL} className={style.postCover} />
-      <h1>{title}</h1>
-      <p>{text}</p>
-    </div>
+    <Link to="/post">
+      <div className={style.container}>
+        <img src={imageURL} className={style.postCover} />
+        <h1>{title}</h1>
+        <p>{text}</p>
+      </div>
+    </Link>
   );
 };

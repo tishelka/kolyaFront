@@ -20,7 +20,6 @@ export const Header = ({ setSearchTerm }: HeaderProps) => {
       />
       <div className={style.buttons}>
         <button className={style.headerBtn}>Profile</button>
-        {/* <button className={style.headerBtn}>Profile</button> */}
         <Link to="/create">
           <button className={style.headerBtn}>Create post</button>
         </Link>

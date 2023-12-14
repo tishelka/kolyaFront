@@ -4,8 +4,9 @@ import mainPic from "../../assets/home-bg.jpg";
 import { Post } from "../../components/Post";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Footer } from "../../components/Footer";
 
-type PostData = {
+export type PostData = {
   id: number;
   title: string;
   text: string;
@@ -51,6 +52,7 @@ export const MainPage = () => {
           return <Post {...props} />;
         })}
       </div>
+      <Footer />
     </div>
   );
 };
